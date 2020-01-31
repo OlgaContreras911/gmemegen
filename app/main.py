@@ -164,4 +164,4 @@ def draw_text(draw, x, y, text, font):
 if __name__ == '__main__':
     # Run dev server (for debugging only)
     args = get_args()
-    app.run(host=args.host, port=args.port, debug=True)
+    app.run(host='0.0.0.0', port=8080, debug=True)
