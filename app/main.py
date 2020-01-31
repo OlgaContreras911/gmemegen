@@ -28,7 +28,7 @@ from configuration import (
 
 app = Flask(__name__)
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
-app.config['SQLALCHEMY_DATABASE_URI'] = 'postgres+pg8000://postgres:proyecto2020@/final-deploy-instance?unix_sock=/cloudsql/olga-devops-project-2020:us-central1:final-deploy-instance/.s.PGSQL.5432'
+app.config['SQLALCHEMY_DATABASE_URI'] = 'postgres+pg8000://postgres:proyecto2020@/final-deploy-db?unix_sock=/cloudsql/olga-devops-project-2020:us-central1:final-deploy-instance/.s.PGSQL.5432'
 db = SQLAlchemy(app)
 
 
